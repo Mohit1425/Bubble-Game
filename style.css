@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Gilroy";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color:#daf3ff;
+    
+}
+
+#panel {
+    overflow: hidden;
+    width: 90%;
+    height: 90%; 
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#ptop {
+    padding: 0px 10%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    background-color:#06384f ;
+    flex-wrap: wrap;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.elem h2 {
+     font-weight:  500;
+     font-size: 18px;
+     
+}
+
+
+.box {
+    padding: 8px 15px; 
+    background-color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3083a9;
+}
+
+
+#pbtm{
+    padding: 10px;
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.bubble {
+    width: 50px;
+    height: 50px;
+    background-color:#06384f;
+    color:white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.bubble:hover{
+    background-color: #13678e;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .elem h2{
+        font-size: 16px;
+    }
+
+    .box{
+        font-size: 18px;
+    }
+    
+    .bubble{
+        width: 40px ;
+        height:40px ;
+        font-size: 14px ;
+    }
+}
+
+@media (max-width: 437px){
+    #panel {
+        width: 100px ;
+        height: 70px ;
+    }
+
+    #ptop {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .elem h2 {
+        font-size: 14px;
+    }
+
+    .box{
+        font-size: 12px;
+    }
+
+    .bubble{
+        width: 30px ;
+        height: 30px ;
+        font-size: 12px ;
+    }
+}
